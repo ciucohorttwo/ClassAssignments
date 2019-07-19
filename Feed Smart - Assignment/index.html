@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+
+    <head>
+	<title>Loan application</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+	<!--Body container-->
+	<div class="container">
+		<h1>Loan Application Form</h1>
+		<div id="forms">
+			<form action="#" method="post" id="loan-application">
+				<section class="col">
+
+					<fieldset>
+						<!--		Company Information -->
+						<legend>Company Info</legend>
+
+						<label for="user-name">Name: </label>
+						<input type="text" name="user-name" id="user-name"><br>
+
+						<label for="address">Address: </label>
+						<input type="text" name="user-address" id="address"><br>
+
+						<label for="city">City: </label>
+						<input type="text" name="user-city" id="city"><br>
+
+						<label for="zip">Zip: </label>
+						<input type="text" name="user-zip" id="zip"><br>
+
+						<label for="tel">Telephone: </label>
+						<input type="tel" name="user-tel" id="tel"><br>
+
+						<label for="website">Website: </label>
+						<input type="url" name="user-website" id="website">
+
+					</fieldset>
+
+					<!--			financial info-->
+					<fieldset>
+						<legend>Financial Info (attach documents)</legend>
+						<div class="financial">
+							<label for="business">
+								<img src="images/file-attachment.png" width="35px">
+							</label>
+							<input type="file" name="business-plan" id="business">
+							<span>Business Plan</span>
+						</div>
+						<div class="financial">
+							<label for="additional">
+								<img src="images/file-attachment.png" width="35px">
+							</label>
+							<input type="file" name="additional-info" id="additional">
+							<span>Additional</span>
+						</div>
+					</fieldset>
+
+				</section>
+
+				<section class="col">
+
+					<!--contact info-->
+					<fieldset>
+						<legend>Contact Info</legend>
+						<label for="name">First name:</label>
+						<input type="text" name="first_name" id="name"><br>
+
+						<label for="last_name">last name:</label>
+						<input type="text" name="last_name" id="last_name"><br>
+
+						<label for="job">Job title:</label>
+						<select name="job" id="job"></select><br>
+
+						<label for="telephone">Telephone:</label>
+						<input type="tel" name="telephone" id="telephone">
+					</fieldset>
+					<!--Transaction -->
+					<fieldset id="trans">
+						<legend>Transaction</legend>
+						<div id="transaction">Proposed transaction<br>(Check all required)
+						</div>
+
+						<div class="checkboxes">
+							<input type="checkbox" name="debt" checked id="debt"><label for="debt">Private debt</label><br>
+
+							<input type="checkbox" name="financing" checked id="financing"><label for="equity">Project financing</label><br>
+
+							<input type="checkbox" name="privateDate" checked id="private-date">
+							<label for="private-date">Private debt</label><br>
+
+							<input type="checkbox" name="merger" checked id="merger"><label for="merger">Acquisition</label>
+						</div>
+						<!--				estimates-->
+						<div class="est">
+							<label for="trans-size">Est. size of transaction</label>
+							<input id="trans-size" name="transaction" type="number">
+						</div>
+
+						<div class="est">
+							<label for="timeframe">Estimated timeframe</label>
+							<input type="text" id="timeframe" name="timeframe">
+						</div>
+					</fieldset>
+				</section>
+
+			</form>
+		</div>
+	</div>
+</body></html>

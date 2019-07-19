@@ -1,0 +1,82 @@
+div.container {
+	background-color: rgb(235, 211, 183);
+	color:black;
+	font-family: roboto;
+	font-size: .875em;
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+h1 {
+	text-align: center;
+	padding-left: .5em;
+}
+
+/*Modifying the box-sizing property of all form elements*/
+input,
+textarea,
+button,
+select {
+	box-sizing: border-box;
+	font-family: inherit;
+}
+div#forms {
+	width: 90%;
+	margin: 0 auto;
+}
+
+legend {
+	font-family: "Agency FB";
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+	margin-bottom: .2em;
+}
+label {
+	display: inline-block;
+	width: 6em;
+	
+}
+
+fieldset#trans label {
+	display: inline-block;
+	width: 15em;
+}
+/**/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type = "number"],
+select {
+	margin-bottom: .5em;
+	width: 20em;
+	padding: 1px 5px; 
+	display: inline-block;
+	border: .5px solid darkslategray;
+}
+input[type ="file"] {
+	display: none;
+}
+
+#zip {
+	width: 8em;
+}
+fieldset {
+	border: 0px;
+	/*	border-top: 2px solid;*/
+}
+
+section.col {
+	float: left;
+	width: 45%;
+/*	margin: 2% ;*/
+}
+div.financial {
+	display: inline-block;
+}
+div.financial span {
+	width: 150px;
+	display: block;
+}
